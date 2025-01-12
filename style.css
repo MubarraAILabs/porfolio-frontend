@@ -1,0 +1,195 @@
+/* Light Mode (Default) */
+body.light-mode {
+    --background-color: #ffffff;
+    --text-color: #000000; 
+    --navbar-bg-color: #ffffff;
+    --header-bg-color: #007bff; 
+    --card-bg-color: #f8f9fa;
+    --card-text-color: #000000;
+    --section-bg-color: #f8f9fa;
+    --section-title-color: #000000;
+    --header-bg-image: url('images/iot7.jpg');
+    
+}
+
+/* Dark Mode */
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --navbar-bg-color: #1f1f1f;
+    --header-bg-color: #000000; /* Dark mode header background */
+    --card-bg-color: #1e1e1e;
+    --card-text-color: #ffffff;
+    --section-bg-color: #1f1f1f; /* Background for sections in dark mode */
+    --section-title-color: #ffffff; /* Title color for section in dark mode */
+    --header-bg-image: url('images/iot1.jpg')
+
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Bounce-in animation */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bounce-in {
+    animation: bounceIn 1s ease-in-out;
+}
+
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+.navbar {
+    background-color: var(--text-color);
+    transition: background-color 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header {
+    /* background-color: var(--header-bg-color); Dynamic header background */
+    background-image: var(--header-bg-image);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    height: 500px;
+    
+}
+/* .card {
+    background-color: var(--card-bg-color);
+    color: var(--card-text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: justify;
+    
+} */
+ /* Container for project card with image and overlay */
+.project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Project image styles */
+.project-card img {
+    width: 100%;
+    height: 275px; /* Maintain aspect ratio */
+    transition: opacity 0.3s ease;
+}
+
+/* Overlay for project details */
+.project-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Show overlay on hover */
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+.project-card:hover img {
+    opacity: 0.3; /* Dim the image when hovered */
+}
+
+.project-card .overlay h5 {
+    margin-bottom: 10px;
+}
+
+.project-card .overlay p {
+    margin-bottom: 20px;
+}
+
+
+section {
+    background-color: var(--section-bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h2 {
+    color: var(--section-title-color); /* Dynamic section title color */
+    transition: color 0.3s ease;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.skill {
+    background-color: var(--card-bg-color);
+    color: var(--card-text-color);
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skill:hover {
+    background-color: var(--header-bg-color);
+    color: var(--text-color);
+}
+
+
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Pulsating effect for footer text */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+footer p {
+    animation: pulse 2s infinite;
+}

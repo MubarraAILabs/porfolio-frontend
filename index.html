@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mubarra Shaikh - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body class="light-mode"> <!-- Default light mode -->
+
+    <!-- Navbar with Dark/Light Mode Switch -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <img src="images/img.jpg" alt="Your Name" style="width: 40px; height: 40px;" class="rounded-circle"> Mubarra Shaikh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
+                    <li class="nav-item">
+                        <div class="form-check form-switch mt-1 ms-3">
+                            <input class="form-check-input" type="checkbox" id="darkModeSwitch">
+                            <label class="form-check-label text-white" for="darkModeSwitch">Dark Mode</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section with Typing Effect -->
+    <header class="text-white text-center py-5 fade-in">
+        <div class="container">
+            <img src="images/img.jpg" alt="Mubarra Shaikh" class="rounded-circle mb-3 bounce-in" style="width: 150px;">
+            <h1>Welcome to My Portfolio</h1>
+            <p class="lead">I'm a <span id="profession"></span></p> <!-- Profession will be typed here -->
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2>About Me</h2>
+            <p> I am a passionate and driven professional with a Bachelor’s 
+                degree in Electronic Engineering and 
+                over five years of experience as an Embedded Software Developer.
+                 During my time at Myth and Zeal, I developed and honed my skills in embedded systems,
+                  where I contributed to several successful projects 
+                  that involved complex hardware-software integration.</br></br>
+                  After taking a break to prepare for the UPSC examination, 
+                  I am now focused on transitioning into Full Stack Development. 
+                  I am actively upskilling in modern web technologies,
+                   including JavaScript, React, Node.js, and more. 
+                   I am excited to leverage my engineering background and 
+                   software development experience in a new capacity to create robust, 
+                   user-friendly web applications. 
+                   My goal is to contribute to innovative projects that bridge 
+                   the gap between hardware and software.</br></br>
+                Thanks for reading this, below are some of the list of projects made by me.</p>
+        </div>
+    </section>
+
+   
+
+
+    <!-- Projects Section -->
+    
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="images/dimmer.jfif" alt="Project 1" class="card-img-top" height="275px">
+                    <div class="overlay">
+                        <div>
+                            <h5>Dimmer</h5>
+                            <p>In this project, I automated a light dimmer using embedded C programming. 
+                                The primary goal was 
+                             to control the brightness of a light source by adjusting its power 
+                             input using a microcontroller.</br>The system also featured a user interface 
+                             for adjusting brightness levels manually. </p>
+                           
+                            <a href="#" class="btn btn-light">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="images/plc.jfif" alt="Project 2" class="card-img-top" height="275px">
+                    <div class="overlay">
+                        <div>
+                            <h5>PLC Automation</h5>
+                            <p>In this project, I automated a Programmable Logic Controller (PLC) 
+                                using Python and controlled it over LAN via the TCP/IP protocol.
+                                This setup enabled remote access and control of the PLC,
+                                 allowing operators to monitor system performance and respond to faults.</p>
+                            <a href="#" class="btn btn-light">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="images/tms.jfif" alt="Project 3" class="card-img-top" height="275px">
+                    <div class="overlay">
+                        <div>
+                            <h5>Theater Management System</h5>
+                            <p>In this project, I developed a System that utilized Python 
+                                to read and process sensor data for managing various aspects of a theater environment. 
+                                The primary aim was to enhance the theater experience by integrating real-time data 
+                                from various sensors into the management system.</p>
+                            <a href="#" class="btn btn-light">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+     <!-- Skills Section -->
+<section id="skills" class="py-5">
+    <div class="container">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">C</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">Python</div>
+            <div class="skill">Go</div>
+            <div class="skill">Git</div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+     <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">© 2024 Mubarra Shaikh. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Dark Mode Script and Typing Effect -->
+    <script>
+        // Dark Mode Toggle
+        const toggleSwitch = document.getElementById('darkModeSwitch');
+        const currentTheme = localStorage.getItem('theme'); // Check if theme is saved in localStorage
+
+        // Load saved theme
+        if (currentTheme) {
+            document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+            toggleSwitch.checked = currentTheme === 'dark';
+        }
+
+        toggleSwitch.addEventListener('change', () => {
+            if (toggleSwitch.checked) {
+                document.body.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark'); // Save preference in localStorage
+            } else {
+                document.body.classList.remove('dark-mode');
+                localStorage.setItem('theme', 'light'); // Save preference in localStorage
+            }
+        });
+
+        // Typing Effect for Profession
+        const professionText = "Software Developer"; // Change this to your profession
+        const typingSpeed = 100; // Speed in milliseconds
+        let index = 0;
+
+        function typeText() {
+            const professionElement = document.getElementById('profession');
+            if (index < professionText.length) {
+                professionElement.innerHTML += professionText.charAt(index);
+                index++;
+                setTimeout(typeText, typingSpeed); // Type next letter after delay
+            }
+        }
+
+        // Start typing effect when page loads
+        window.onload = () => {
+            typeText();
+        };
+    </script>
+</body>
+</html>
